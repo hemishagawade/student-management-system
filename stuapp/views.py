@@ -7,7 +7,7 @@ def dashboard(request):
     data = Student.objects.all()
     context = {}
     context['students'] = data
-    return render(request,'dashboard.html',context)
+    return render(request,'index.html',context)
 
 def addstu(request):
     if request.method=="GET":
